@@ -97,6 +97,17 @@ body {
   margin-right: 2em;
 }
 
+@media screen and (max-width : 768px) {
+  .hero--title__head {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (max-width : 420px) {
+  .hero--title__head {
+    font-size: 1.2rem;
+  }
+}
 .hero--text {
   text-align: left;
 }
