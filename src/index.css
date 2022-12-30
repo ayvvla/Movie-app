@@ -30,6 +30,15 @@ body {
   border: none;
 }
 
+@media screen and (max-width: 480px) {
+  .search h1 {
+    font-size: 0.7rem
+  }
+  .search--input {
+    width: 150px;
+  }
+}
+
 .searchbtn {
   padding: 4px;
   border: none;
