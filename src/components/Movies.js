@@ -2,15 +2,23 @@ import React from "react";
 import Movie from "./Movie";
 import { GrFormNextLink, GrFormPreviousLink } from "react-icons/gr";
 
-const Movies = ({ data, count, setCount, genres, setSelectedMovie,searchCount, setSearchCount }) => {
+const Movies = ({
+  data,
+  count,
+  setCount,
+  genres,
+  setSelectedMovie,
+  searchCount,
+  setSearchCount,
+}) => {
   const handleNext = () => {
     setCount(count + 1);
-    setSearchCount(searchCount + 1)
+    setSearchCount(searchCount + 1);
   };
   const handlePrev = () => {
-    setCount(count - 1)
-    setSearchCount(searchCount - 1)
-  }
+    setCount(count - 1);
+    setSearchCount(searchCount - 1);
+  };
   return (
     <div className="movie--container">
       {data.map((element) => {
@@ -28,7 +36,11 @@ const Movies = ({ data, count, setCount, genres, setSelectedMovie,searchCount, s
         );
       })}
       <div className="page--navi">
-        <GrFormPreviousLink size="2em" className="previous" onClick={handlePrev}/>
+        <GrFormPreviousLink
+          size="2em"
+          className="previous"
+          onClick={handlePrev}
+        />
         Page {count}
         <GrFormNextLink className="next" onClick={handleNext} size="2em" />
       </div>

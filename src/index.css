@@ -15,7 +15,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: .5em 1em;
+  padding: 0.5em 1em;
 }
 
 .search--form {
@@ -26,13 +26,18 @@ body {
   padding: 4px;
   width: 250px;
   text-indent: 5px;
-  transition: width .3s ease-in;
+  transition: width 0.3s ease-in;
   border: none;
+}
+
+.search--input:focus {
+  border: none;
+  outline: none;
 }
 
 @media screen and (max-width: 480px) {
   .search h1 {
-    font-size: 0.7rem
+    font-size: 0.7rem;
   }
   .search--input {
     width: 150px;
@@ -72,11 +77,8 @@ body {
   cursor: pointer;
 }
 
-
-
 .btn:hover {
   background-color: #414141;
-  
 }
 
 .hero--title {
@@ -89,21 +91,20 @@ body {
   padding-top: 5px;
 }
 
-
 .hero--title__head {
   font-size: 2.3rem;
   font-weight: 800;
-  margin-block: .8em;
+  margin-block: 0.8em;
   margin-right: 2em;
 }
 
-@media screen and (max-width : 768px) {
+@media screen and (max-width: 768px) {
   .hero--title__head {
     font-size: 1.7rem;
   }
 }
 
-@media screen and (max-width : 420px) {
+@media screen and (max-width: 420px) {
   .hero--title__head {
     font-size: 1.2rem;
   }
@@ -121,8 +122,8 @@ body {
 
 .movie--container {
   display: grid;
-  grid-template-columns: repeat(auto-fit , minmax(250px, 1fr));
-  gap: 3em 3em; 
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3em 3em;
   padding: 1em 2em;
   color: #a1a1a1;
 }
@@ -130,12 +131,12 @@ body {
 .movie--card {
   display: flex;
   flex-direction: column;
-  padding-bottom:1em;
+  padding-bottom: 1em;
   border-radius: 10px;
   height: 520px;
   cursor: pointer;
   background-color: transparent;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .movie--card:hover {
@@ -163,8 +164,7 @@ body {
 
 .movie--genre {
   text-align: center;
-  font-size: .9em;
-
+  font-size: 0.9em;
 }
 
 .page--navi {
@@ -176,7 +176,8 @@ body {
   justify-content: center;
 }
 
-.next, .previous {
+.next,
+.previous {
   cursor: pointer;
 }
 
@@ -184,6 +185,3 @@ body {
   position: absolute;
   inset: 0;
 }
-
-
-
